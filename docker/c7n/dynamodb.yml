@@ -1,0 +1,5 @@
+policies:
+  - name: missing_name_tag
+    resource: dynamodb-table
+    filters:
+      - "tag:Name": absent

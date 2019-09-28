@@ -1,0 +1,6 @@
+accounts:
+- account_id: 'mytestaccount'
+  name: mytestaccount
+  regions:
+  - us-east-1
+  role: arn:aws:iam::1234:role/OrganizationAccountAccessRole

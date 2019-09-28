@@ -1,0 +1,11 @@
+c7n:
+  build: docker/
+  volumes:
+    - ~/.aws/:/root/.aws:ro
+  command: custodian run -s /tmp/c7n /c7n/dynamodb.yml
+
+c7n-org:
+  build: docker/
+  volumes:
+    - ~/.aws/:/root/.aws:ro
+  command: c7n-org run -c /c7n-org/accounts.yml -s /tmp/c7n-org -u /c7n-org/dynamodb.yml
