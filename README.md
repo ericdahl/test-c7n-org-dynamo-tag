@@ -32,6 +32,7 @@ test-c7n-org-dynamo-tag_c7n-org_1 exited with code 0
 ```
 
 **Expected** Both tools report 1 untagged table
+
 **Actual** c7n-org reports 2 untagged tables while c7n reports 1
 
 Resources file:
